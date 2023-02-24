@@ -236,6 +236,14 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor 
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     $(LOCAL_PATH)/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
