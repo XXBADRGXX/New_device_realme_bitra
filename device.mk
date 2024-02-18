@@ -307,6 +307,9 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Oplus Camera
+$(call inherit-product, vendor/oplus/camera/opluscamera.mk)
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \

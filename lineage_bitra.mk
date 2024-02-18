@@ -15,6 +15,8 @@ $(call inherit-product, device/realme/bitra/device.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Oplus Cam
+TARGET_USES_OPLUS_CAMERA := true
 
 #LUNARIS Flags
 WITH_GMS := true
