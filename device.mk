@@ -156,6 +156,10 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
 
+
+# Oplus-fwk 
+$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk) 
+
 # Gamebar
 PRODUCT_PACKAGES += \
     GameBar
