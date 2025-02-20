@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
@@ -89,6 +93,10 @@ PRODUCT_COPY_FILES += \
 
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 30
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
 
 # Boot control
 PRODUCT_PACKAGES += \
@@ -184,6 +192,10 @@ PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
 # Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk
+
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.oplus.hw.rc \
@@ -289,6 +301,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -391,4 +406,4 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/realme/RMX3371/RMX3371-vendor.mk)
