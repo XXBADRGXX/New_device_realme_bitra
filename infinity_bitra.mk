@@ -9,23 +9,33 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit some common Infinity-X stuff
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Infinity-X Flags
+TARGET_SHIPS_FULL_GAPPS := true 
+WITH_GAPPS := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := XXBADR98GXX
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_IS_PIXEL := true
+TARGET_EXCLUDES_AUDIOFX := true
+
+# Boot animation resolution.
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from bitra device
 $(call inherit-product, device/realme/bitra/device.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Oplus Cam
 PRODUCT_NO_CAMERA := true
 TARGET_USES_OPLUS_CAMERA := true
 
-#LUNARIS Flags
-WITH_GMS := true
-WITH_BCR := true
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-
-PRODUCT_NAME := lineage_bitra
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := infinity_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
@@ -40,3 +50,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX3370 \
     SystemDevice=RE879AL1 \
     SystemName=RMX3370
+
+# Inherit from release keys
+$(call inherit-product, vendor/infinity-priv/keys/keys.mk)

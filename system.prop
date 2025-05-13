@@ -1,0 +1,6 @@
+# DEVICE INFO 
+ro.infinity.soc=Qualcomm Snapdragon 870
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2400, 120 Hz
+ro.infinity.camera=64Mp + 8Mp + 2Mp
+ro.product.marketname=Realme GT Neo2 5G
