@@ -13,7 +13,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/bladerunner/device.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+#LUNARIS Flags
+TARGET_USES_CORE_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := lineage_bladerunner
 PRODUCT_DEVICE := bladerunner
