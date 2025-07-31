@@ -18,6 +18,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit ViperX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+#LUNARIS Flags
+WITH_GMS := true
+WITH_BCR := true
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_bladerunner
 PRODUCT_DEVICE := bladerunner
 PRODUCT_BRAND := realme
