@@ -1,6 +1,9 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
 ## from RMX3371_14.0.0.1800(EX01).
 
+
+
+
 # ACDBs
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
@@ -135,7 +138,6 @@ odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/settings_fdc.txt
 odm/lib64/camera/com.qti.sensor.gc8054.so
-odm/lib64/camera/com.qti.sensor.hi846.so
 odm/lib64/camera/com.qti.sensor.imx616.so
 odm/lib64/camera/com.qti.sensor.ov02a1b.so
 odm/lib64/camera/com.qti.sensor.s5k3m5sx.so
@@ -160,6 +162,26 @@ odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 vendor/lib64/libtriplecam_optical_zoom_vs.so
 vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
+
+# Camera bitra
+odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/camera_unit_feature_config.protobuf
+odm/etc/camera/config/hi846
+odm/etc/camera/config/imx471
+odm/etc/camera/config/ov02b
+odm/etc/camera/config/s5kgw1
+odm/etc/camera/CameraHWConfiguration.config
+odm/etc/camera/camera_engmode.xml
+odm/etc/camera/settings_fdc.txt
+odm/lib64/camera/com.qti.sensor.hi846.so
+odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
+odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
+odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
 # Camera (All)
 odm/bin/vl53l1_daemon_main
@@ -938,6 +960,26 @@ odm/firmware/fastchg/19795/oplus_vooc_fw.bin
 odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
+
+# Charger
+odm/firmware/fastchg/136730/charging_thermal_config_default.txt
+odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136858/charging_thermal_config_default.txt
+odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136859/charging_thermal_config_default.txt
+odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
+odm/firmware/fastchg/21619/charging_thermal_config_default.txt
+odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2161A/charging_thermal_config_default.txt
+odm/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169A/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/charging_thermal_config_default.txt
+
+
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
@@ -1146,6 +1188,8 @@ odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib64/anc.hal.so
+odm/lib64/librpmbengclient.so
+odm/lib64/libolc_vnd.so
 odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
 odm/lib64/hw/fingerprint.goodix_G5.default.so
@@ -1188,6 +1232,8 @@ vendor/firmware/image/opluseid.b05
 vendor/firmware/image/opluseid.b06
 vendor/firmware/image/opluseid.b07
 vendor/firmware/image/opluseid.mdt
+
+
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1502,7 +1548,6 @@ vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so
@@ -1692,6 +1737,10 @@ odm/bin/hw/vendor.qti.secure_element@1.2-service|a71193d9c14942119a0d46c35d0f415
 odm/etc/init/vendor.qti.secure_element@1.2-service.rc|14f20ae397ecfacfca121ce4f06c2e2012cd99e8
 odm/lib64/android.hardware.secure_element@1.0-impl.so|c1729c7536ec451d080a097949148bae876bb8c2
 
+# Sensors bitra
+odm/etc/sensor/config/kona_bu52053nvx_0.json
+
+
 # Sensors
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
@@ -1836,6 +1885,11 @@ vendor/lib64/libtime_genoff.so
 odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img
 odm/firmware/tp/19795/FW_GT9886_SAMSUNG_FAE.img
 odm/firmware/tp/19795/LIMIT_GT9886_SAMSUNG.img
+
+# Touchscreen firmware bitra
+odm/firmware/tp/21619/FW_S3908_SAMSUNG.img
+odm/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img
+odm/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
