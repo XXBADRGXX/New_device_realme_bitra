@@ -138,6 +138,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
+TARGET_USES_FOD_ZPOS := true
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
@@ -405,4 +407,4 @@ PRODUCT_PACKAGES += \
     firmware_qca6490_WCNSS_qcom_cfg.ini_symlink \
     firmware_qca6490_wlan_mac.bin_symlink
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/realme/bladerunner/bladerunner-vendor.mk)
+$(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
