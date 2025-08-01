@@ -26,7 +26,7 @@ from extract_utils.utils import (
 )
 
 namespace_imports = [
-    'device/realme/bladerunner',
+    'device/realme/bitra',
     'hardware/oplus',
     'hardware/qcom-caf/sm8250',
     'hardware/qcom-caf/wlan',
@@ -137,7 +137,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'bladerunner',
+    'bitra',
     'realme',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
