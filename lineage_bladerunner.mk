@@ -15,6 +15,9 @@ $(call inherit-product, device/realme/bladerunner/device.mk)
 # Inherit some common lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit ViperX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 PRODUCT_NAME := lineage_bladerunner
 PRODUCT_DEVICE := bladerunner
 PRODUCT_BRAND := realme
