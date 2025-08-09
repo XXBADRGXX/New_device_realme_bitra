@@ -1,9 +1,6 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
 ## from RMX3371_14.0.0.1800(EX01).
 
-
-
-
 # ACDBs
 odm/etc/acdbdata/Bluetooth_cal.acdb
 odm/etc/acdbdata/General_cal.acdb
@@ -138,6 +135,7 @@ odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/settings_fdc.txt
 odm/lib64/camera/com.qti.sensor.gc8054.so
+odm/lib64/camera/com.qti.sensor.hi846.so
 odm/lib64/camera/com.qti.sensor.imx616.so
 odm/lib64/camera/com.qti.sensor.ov02a1b.so
 odm/lib64/camera/com.qti.sensor.s5k3m5sx.so
@@ -162,26 +160,6 @@ odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/vendor.oplus.hardware.cameraextension@1.0-service-impl.so
 vendor/lib64/libtriplecam_optical_zoom_vs.so
 vendor/lib64/vendor.oplus.hardware.cameraextension@1.0.so
-
-# Camera bitra
-odm/etc/camera/config/camera_unit_config
-odm/etc/camera/config/camera_unit_feature_config.protobuf
-odm/etc/camera/config/hi846
-odm/etc/camera/config/imx471
-odm/etc/camera/config/ov02b
-odm/etc/camera/config/s5kgw1
-odm/etc/camera/CameraHWConfiguration.config
-odm/etc/camera/camera_engmode.xml
-odm/etc/camera/settings_fdc.txt
-odm/lib64/camera/com.qti.sensor.hi846.so
-odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
-odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
-odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
-odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
-odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
-odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
-odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
-odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
 # Camera (All)
 odm/bin/vl53l1_daemon_main
@@ -930,6 +908,8 @@ odm/lib64/camera/com.qti.tuned.sm8250_qtech_ov64b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin|2add99ab03905299c9a03d4593cccc10ab18aa7d
+odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -959,16 +939,12 @@ odm/firmware/fastchg/19706/oplus_vooc_fw.bin
 odm/firmware/fastchg/19795/oplus_vooc_fw.bin
 odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
-
-
-# Charger
 odm/firmware/fastchg/136730/charging_thermal_config_default.txt
 odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/136858/charging_thermal_config_default.txt
 odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/136859/charging_thermal_config_default.txt
 odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
 odm/firmware/fastchg/21619/charging_thermal_config_default.txt
 odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/2161A/charging_thermal_config_default.txt
@@ -977,7 +953,6 @@ odm/firmware/fastchg/2169A/charging_thermal_config_default.txt
 odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
 odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
-odm/firmware/fastchg/charging_thermal_config_default.txt
 
 
 # CNE
@@ -1188,8 +1163,6 @@ odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib64/anc.hal.so
-odm/lib64/librpmbengclient.so
-odm/lib64/libolc_vnd.so
 odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
 odm/lib64/hw/fingerprint.goodix_G5.default.so
@@ -1200,10 +1173,12 @@ odm/lib64/libgf_hal_G3.so
 odm/lib64/libgf_hal_G5.so
 odm/lib64/libgf_hal_G6.so
 odm/lib64/libgf_hal_G7.so
+odm/lib64/librpmbengclient.so
+odm/lib64/libolc_vnd.so
+vendor/lib64/libhvx_proxy_stub.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|64eeee3fc357cdbfb42a41e169983992e55d93da
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-vendor/lib64/libhvx_proxy_stub.so
 
 # Fingerprint firmware
 odm/vendor/firmware/ancap64.b00
@@ -1233,8 +1208,6 @@ vendor/firmware/image/opluseid.b05
 vendor/firmware/image/opluseid.b06
 vendor/firmware/image/opluseid.b07
 vendor/firmware/image/opluseid.mdt
-
-
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -1470,6 +1443,7 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
 # Listen
+vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libgcs-calwrapper.so
@@ -1502,6 +1476,33 @@ vendor/etc/vintf/manifest/c2_manifest_vendor.xml|0e532bf1c7d6a0ee2e7e03a9cc3283a
 
 # Native public libraries
 vendor/etc/public.libraries.txt
+
+# Media (Dolby Vision)
+vendor/bin/hw/dolbycodec2
+vendor/etc/dolby_vision.cfg
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
+vendor/lib/c2.dolby.avc.dec.so
+vendor/lib/c2.dolby.avc.sec.dec.so
+vendor/lib/c2.dolby.client.so
+vendor/lib/c2.dolby.egl.so
+vendor/lib/c2.dolby.hevc.dec.so
+vendor/lib/c2.dolby.hevc.enc.so
+vendor/lib/c2.dolby.hevc.sec.dec.so
+vendor/lib/c2.dolby.store.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk_vendor.so
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0_vendor.so
+vendor/lib/libdolbyottcameracontrol.so
+vendor/lib/libdolbyvision.so
+vendor/lib64/c2.dolby.avc.dec.so
+vendor/lib64/c2.dolby.avc.sec.dec.so
+vendor/lib64/c2.dolby.client.so
+vendor/lib64/c2.dolby.egl.so
+vendor/lib64/c2.dolby.hevc.dec.so
+vendor/lib64/c2.dolby.hevc.enc.so
+vendor/lib64/c2.dolby.hevc.sec.dec.so
+vendor/lib64/c2.dolby.store.so
+vendor/lib64/libdolbyottcameracontrol.so
+vendor/lib64/libdolbyvision.so
 
 # Neural networks
 odm/lib64/libhta.so
@@ -1549,6 +1550,7 @@ vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
+vendor/etc/powerhint.xml
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libperfioctl.so

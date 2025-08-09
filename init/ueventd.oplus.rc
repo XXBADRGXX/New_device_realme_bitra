@@ -12,3 +12,7 @@
 
 # WiFi
 firmware_directories /mnt/vendor/persist/copy/ /mnt/vendor/persist/ /odm/etc/wifi/ /vendor/firmware_mnt/image/qca6390/ /vendor/firmware_mnt/image/qca6490/ /vendor/firmware_mnt/image/
+
+#fingerprint
+/dev/fpc1020 0660 system system
+/dev/goodix_fp 0660 system system
