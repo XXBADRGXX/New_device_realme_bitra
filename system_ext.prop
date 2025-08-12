@@ -30,7 +30,7 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 #Lunaris
-ro.paranoid.maintainer=YAZZDAN
+ro.paranoid.maintainer=XXBADRGXX
 
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml

@@ -5,8 +5,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- About device screen, build maintainer -->
-    <string name="lunaris_device_message">Realme X50 Pro</string>
-    <string name="lunaris_processor_code_message">Snapdragon® 865</string>
-    <string name="lunaris_battery_type_message">4200 mAh</string>
-    <string name="lunaris_screen_message">Amoled 90hz</string>
+    <string name="lunaris_device_message">Realme GT Neo 2</string>
+    <string name="lunaris_processor_code_message">Snapdragon® 870</string>
+    <string name="lunaris_battery_type_message">5000 mAh</string>
+    <string name="lunaris_screen_message">Amoled 120hz</string>
 </resources>

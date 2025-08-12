@@ -16,7 +16,7 @@ clone_if_missing() {
 
 # Git clones
 clone_if_missing "https://github.com/AAMIRR-ALI/android_hardware_oplus" "sixteen" "hardware/oplus"
-clone_if_missing "https://github.com/XXBADRGXX/New_vendor_realme_bitra" "16" "vendor/realme/bitra"
+clone_if_missing "https://github.com/XXBADRGXX/New_vendor_realme_bitra" "sixteen" "vendor/realme/bitra"
 clone_if_missing "https://github.com/XXBADRGXX/kernel_realme_bitra" "15" "kernel/realme/sm8250"
 clone_if_missing "https://gitlab.com/badr98-t/proprietary_vendor_oplus_camera" "15.0"  "vendor/oplus/camera"
 
