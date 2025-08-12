@@ -122,7 +122,7 @@ odm/lib64/libarcsoft_dualcam_refocus_left.so|af5108ddfcb055ea6d55a03831a39f5001a
 odm/lib64/libarcsoft_dualcam_refocus_preview.so|41c885f87cecd952b4fa5eb7459c3dc5f832b893
 odm/lib64/libarcsoft_dualcam_refocus_uw.so|ac685bfd05d0fd656a17df96c083086e91425802
 
-# Camera - Bladerunner
+# Camera - bitra
 odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/gc8054
 odm/etc/camera/config/hi846
@@ -908,6 +908,8 @@ odm/lib64/camera/com.qti.tuned.sm8250_qtech_ov64b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin|2add99ab03905299c9a03d4593cccc10ab18aa7d
+odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -932,10 +934,21 @@ vendor/etc/charger_fstab.qti
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # Charger firmware
-odm/firmware/fastchg/19705/oplus_vooc_fw.bin
-odm/firmware/fastchg/19706/oplus_vooc_fw.bin
-odm/firmware/fastchg/19795/oplus_vooc_fw.bin
+odm/firmware/fastchg/136730/charging_thermal_config_default.txt
+odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136858/charging_thermal_config_default.txt
+odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136859/charging_thermal_config_default.txt
+odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
+odm/firmware/fastchg/21619/charging_thermal_config_default.txt
+odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2161A/charging_thermal_config_default.txt
+odm/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169A/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # CNE
@@ -1146,16 +1159,10 @@ odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
 odm/lib64/anc.hal.so
-odm/lib64/hw/fingerprint.goodix_G2.default.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
 odm/lib64/hw/fingerprint.goodix_G5.default.so
-odm/lib64/hw/fingerprint.goodix_G6.default.so
-odm/lib64/hw/fingerprint.goodix_G7.default.so
-odm/lib64/libgf_hal_G2.so
 odm/lib64/libgf_hal_G3.so
 odm/lib64/libgf_hal_G5.so
-odm/lib64/libgf_hal_G6.so
-odm/lib64/libgf_hal_G7.so
 odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so|64eeee3fc357cdbfb42a41e169983992e55d93da
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
@@ -1694,6 +1701,10 @@ odm/bin/hw/vendor.qti.secure_element@1.2-service|a71193d9c14942119a0d46c35d0f415
 odm/etc/init/vendor.qti.secure_element@1.2-service.rc|14f20ae397ecfacfca121ce4f06c2e2012cd99e8
 odm/lib64/android.hardware.secure_element@1.0-impl.so|c1729c7536ec451d080a097949148bae876bb8c2
 
+# Sensors bitra
+odm/etc/sensor/config/kona_bu52053nvx_0.json
+
+
 # Sensors
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
@@ -1834,10 +1845,11 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
-# Touchscreen firmware
-odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img
-odm/firmware/tp/19795/FW_GT9886_SAMSUNG_FAE.img
-odm/firmware/tp/19795/LIMIT_GT9886_SAMSUNG.img
+
+# Touchscreen firmware bitra
+odm/firmware/tp/21619/FW_S3908_SAMSUNG.img
+odm/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img
+odm/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img
 
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service

@@ -4,7 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/bladerunner
+DEVICE_PATH := device/realme/bitra
+
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_CLANG_PROPERTY := true
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -21,7 +26,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := bladerunner
+TARGET_OTA_ASSERT_DEVICE := RE5473,RE879AL1,bitra
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
@@ -194,4 +199,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/realme/bladerunner/BoardConfigVendor.mk
+include vendor/realme/bitra/BoardConfigVendor.mk

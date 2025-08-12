@@ -75,4 +75,21 @@
      <!-- If true, the display will be shifted around in ambient mode. -->
      <bool name="config_enableBurnInProtection">true</bool>
 
+
+    <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportsScreenOffUdfps">true</bool>
+
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
+
+    <!-- Expected value from fast charging status file  -->
+    <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+
+    <!-- Whether device has dash charging support -->
+    <bool name="config_hasVoocCharger">true</bool>
+
+    <bool name="config_proximityCheckOnFpsUnlock">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">true</bool>
 </resources>
