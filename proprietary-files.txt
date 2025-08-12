@@ -1965,6 +1965,8 @@ vendor/etc/wifi/qca6390/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/bin/hw/android.hardware.wifi@1.0-service
+vendor/lib64/libwifi-hal.so
 
 # WiFi Display (system) - from dada OS2.0.217.0.WOCMIXM
 system/framework/WfdCommon.jar;BOOT_JAR|76fab5ed43206989057284fa26e8b894f1da102f
