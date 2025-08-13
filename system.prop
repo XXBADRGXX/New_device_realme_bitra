@@ -4,3 +4,28 @@ ro.infinity.battery=5000 mAh
 ro.infinity.display=1080 x 2400, 120 Hz
 ro.infinity.camera=64Mp + 8Mp + 2Mp
 ro.product.marketname=Realme GT Neo2 5G
+
+# App compaction
+# disabled app compaction due to app freezes when switching tasks
+persist.sys.appcompact.enable_app_compact=false
+persist.sys.appcompact.full_compact_type=2
+persist.sys.appcompact.some_compact_type=4
+persist.sys.appcompact.compact_throttle_somesome=5000
+persist.sys.appcompact.compact_throttle_somefull=10000
+persist.sys.appcompact.compact_throttle_fullsome=500
+persist.sys.appcompact.compact_throttle_fullfull=10000
+persist.sys.appcompact.compact_throttle_bfgs=600000
+persist.sys.appcompact.compact_throttle_persistent=600000
+persist.sys.appcompact.rss_throttle_kb=12000
+persist.sys.appcompact.delta_rss_throttle_kb=8000
+persist.sys.perf.topAppRenderThreadBoost.enable=false
+
+# lmkd
+ro.lmk.swap_compression_ratio=2
+
+# Deep Sleep
+pm.sleep_mode=1
+vendor.post_boot.parsed=1s
+
+# Disbale FPS capping for games
+debug.graphics.game_default_frame_rate.disabled=true
