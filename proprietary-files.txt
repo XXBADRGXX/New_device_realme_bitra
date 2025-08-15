@@ -1428,6 +1428,7 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+vendor/etc/permissions/android.hardware.hardware_keystore.xml
 
 # Listen
 vendor/lib64/hw/sound_trigger.primary.kona.so
